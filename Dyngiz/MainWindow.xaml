@@ -1,0 +1,77 @@
+﻿<Window x:Class="Dyngiz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dyngiz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="132
+                              *"/>
+            <ColumnDefinition Width="132*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="Bisque" Grid.Row="0" Grid.Column="0">
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock FontSize="20">Просто текст</TextBlock>
+            </StackPanel> 
+        </Grid>
+
+        <Grid Background="Honeydew" Grid.Row="1" Grid.Column="1">
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox FontSize="19">Тут мы пишем</TextBox>
+            </StackPanel>
+        </Grid>
+        <Grid Background="Khaki" Grid.Row="2" Grid.Column="2">
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                <RichTextBox FontSize="19"></RichTextBox>
+            </StackPanel>
+        </Grid>
+        <Grid Background="Salmon" Grid.Row="3" Grid.Column="3">
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Slider>
+                </Slider>
+                <PasswordBox Width="100"></PasswordBox>
+            </StackPanel>
+        </Grid>
+        <Grid Background="YellowGreen" Grid.Row="2" Grid.Column="4">
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                <ListBox FontSize="19">
+                    <ListBoxItem>Hello</ListBoxItem>
+                    <ListBoxItem>арбуз</ListBoxItem>
+                </ListBox>
+            </StackPanel>
+        </Grid>
+        <Grid Background="Lavender" Grid.Row="1" Grid.Column="5">
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label FontSize="19">хай я тупой рамиль </Label>
+            </StackPanel>
+        </Grid>
+        <Grid Background="AliceBlue" Grid.RowSpan="1" Grid.ColumnSpan="2" Grid.Column="3">
+            <Menu Height="25" VerticalAlignment="Top">
+                <MenuItem Header="File">
+                    <MenuItem Header="New Project" ></MenuItem>
+                    <MenuItem Header="Open Project" >
+                        <MenuItem Header="WinForms"></MenuItem>
+                        <MenuItem Header="WPF" ></MenuItem>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Exit" ></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Edit" ></MenuItem>
+                <MenuItem Header="View" ></MenuItem>
+            </Menu>
+        </Grid>
+    </Grid>
+</Window>
